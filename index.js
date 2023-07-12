@@ -102,7 +102,7 @@ app.on("ready", () => {
     });
     const menu = new Menu();
 
-    globalShortcut.register("CommandOrControl+Shift+g", () => {
+    globalShortcut.register("Option+Shift+F2", () => {
       if (window.isVisible()) {
         mb.hideWindow();
       } else {
