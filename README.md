@@ -1,15 +1,22 @@
 # ChatGPT for desktop
-
 This is a simple app that makes ChatGPT live in your menubar.
 
-You can use Cmd+Shift+G (Mac) or Ctrl+Shift+G (Win) to quickly open it from anywhere.
+I forked this it make it not collide with all my shortcuts. 
 
-Download:
+I did it by changing the shortcut in index.js. Electron has a nice overview [here](https://www.electronjs.org/docs/latest/api/accelerator) 
 
-- [Mac Arm64 .dmg](https://github.com/vincelwt/chatgpt-mac/releases/download/v0.0.5/ChatGPT-0.0.5-arm64.dmg)
-- [Mac Intel .dmg](https://github.com/vincelwt/chatgpt-mac/releases/download/v0.0.5/ChatGPT-0.0.5-x64.dmg)
+I also removed notarize from foirge.config.js as I do not plan to distribute this app.I am only building for myself
 
-No Windows binaries currently offered. Clone the repo, npm install electron-forge and run.
+When i installed electron-forge and build the app with:
+
+```
+npm install electron-forge
+npm run make
+```
+
+
+You can use Option+Shift+F2 (Mac)
+
 
 <p align="center">
   <img src="./images/screenshot.jpeg" width="500">
@@ -21,4 +28,4 @@ All credit and copyrights goes to OpenAI.
 
 ## Author
 
-You can find me on Twitter [@vincelwt](https://twitter.com/vincelwt).
+You can find the original creator on Twitter [@vincelwt](https://twitter.com/vincelwt).
